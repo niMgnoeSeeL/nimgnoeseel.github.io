@@ -1,3 +1,3 @@
 [submodule "resources/cv"]
 	path = resources/cv
-	url = git@github.com:niMgnoeSeeL/cv.git
+	url = https://github.com/niMgnoeSeeL/cv.git
