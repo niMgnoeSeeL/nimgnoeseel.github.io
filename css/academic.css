@@ -10762,3 +10762,10 @@ div.mermaid {
   text-align: center;
   margin-bottom: 1rem;
 }
+.ul-news li {
+  display: list-item;
+}
+
+.ul-news li.hidden {
+  display: none;
+}

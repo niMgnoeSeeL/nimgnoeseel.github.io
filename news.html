@@ -1,0 +1,19 @@
+---
+layout: default
+title: All News
+---
+
+<section id="all-news" class="home-section wg-blank" style="padding: 30px 0 20px 0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>All News</h1>
+        <ul class="ul-news">
+          {% for item in site.data.news %}
+            <li><div class="description"><b>{{ item.date }}</b> {{ item.content }}</div></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
