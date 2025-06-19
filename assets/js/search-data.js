@@ -109,6 +109,9 @@ ninja.data = [{
           section: "News",},{id: "news-mortar-board-i-joined-software-evolution-and-analysis-laboratory-seal-at-the-university-of-california-los-angeles-ucla-as-a-postdoctoral-researcher-working-with-prof-miryung-kim",
           title: ':mortar_board: I joined Software Evolution and Analysis Laboratory (SEAL) at the University of...',
           description: "",
+          section: "News",},{id: "news-mortar-board-i-have-been-invited-to-serve-as-a-program-committee-member-for-fse-2026",
+          title: ':mortar_board: I have been invited to serve as a program committee member for...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
