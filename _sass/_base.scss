@@ -751,8 +751,11 @@ footer.sticky-bottom {
         }
 
         .award {
-          color: var(--global-theme-color) !important;
-          border: 1px solid var(--global-theme-color);
+          // color: var(--global-theme-color) !important;
+          color: var(--global-bg-color) !important;
+          background-color: var(--global-highlight-color) !important;
+          border: 1px solid var(--global-highlight-color);
+          // border: 1px solid var(--global-theme-color);
         }
       }
 
@@ -791,8 +794,8 @@ footer.sticky-bottom {
         a.btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           margin-left: 0;
@@ -801,9 +804,14 @@ footer.sticky-bottom {
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
           }
+
+          // height: 3.2em;
         }
         a.award.btn {
-          border-color: var(--global-highlight-color);
+          background-color: var(--global-highlight-color) !important;
+          color: white !important;
+          font-weight: bold;
+          border: 1px solid var(--global-highlight-color) !important;
         }
       }
 

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper "Statistical Reachability Analysis" has been accepted to ESEC/FSE 2023!
+:tada: Our paper "Statistical Reachability Analysis" has been accepted to ESEC/FSE 2023!

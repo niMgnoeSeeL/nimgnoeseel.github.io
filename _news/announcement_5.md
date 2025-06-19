@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I have been invited to serve as a program committee member for ASE 2023.
+:mortar_board: I have been invited to serve as a program committee member for ASE 2023.

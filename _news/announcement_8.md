@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I have been invited to serve as a program committee member for ISSTA 2024 and ECOOP 2024 (both the main track and artifact evaluation track).
+:mortar_board: I have been invited to serve as a program committee member for ISSTA 2024 and ECOOP 2024 (both the main track and artifact evaluation track).

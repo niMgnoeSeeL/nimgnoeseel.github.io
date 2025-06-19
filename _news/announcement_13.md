@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper ""Accounting for Missing Events in Statistical Information Leakage Analysis," has been directly accepted in the first round at ICSE 2025! :tada: This year, ICSE 1st round has marked roughly 9% of papers as Accept and 13% as major revisions.
+:tada: Our paper "Accounting for Missing Events in Statistical Information Leakage Analysis," has been directly accepted in the first round at ICSE 2025! This year, ICSE 1st round has marked roughly 9% of papers as Accept and 13% as major revisions.

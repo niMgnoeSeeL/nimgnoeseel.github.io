@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I received the CASA Jump.Start Post-Doctoral Fellowship from [CASA - Cyber Security in the Age of Large-Scale Adversaries](https://casa.rub.de) with a research proposal on "Statistical Security Analysis for Large, Evolving Software!"
+:trophy: I received the CASA Jump.Start Post-Doctoral Fellowship from [CASA - Cyber Security in the Age of Large-Scale Adversaries](https://casa.rub.de) with a research proposal on "Statistical Security Analysis for Large, Evolving Software!"

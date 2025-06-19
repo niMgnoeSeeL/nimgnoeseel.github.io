@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I presented an invited talk at Sheffield Causality and Testing Workshop on "Causal Program Dependence Analysis".
+:microphone: I presented an invited talk at Sheffield Causality and Testing Workshop on "Causal Program Dependence Analysis".

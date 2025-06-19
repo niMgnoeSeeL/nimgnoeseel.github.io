@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I successfully defended my Ph.D. thesis.
+:mortar_board: I successfully defended my Ph.D. thesis.

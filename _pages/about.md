@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D., <a href='https://web.cs.ucla.edu/~miryung/'>Software Evolution and Analysis Laboratory</a>, UCLA
+# subtitle: Ph.D., Postdoctoral researcher @ <a href='https://web.cs.ucla.edu/~miryung/'>Software Evolution and Analysis Laboratory</a>, UCLA
 
 profile:
   align: right
