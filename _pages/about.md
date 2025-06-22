@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>+49 177 1835480</p>
+    <p>+1 (310) 806-7239</p>
     <p>University of California, Los Angeles</p>
     <p>Computer Science Department</p>
     <p>Engineering VI, Room 474</p>

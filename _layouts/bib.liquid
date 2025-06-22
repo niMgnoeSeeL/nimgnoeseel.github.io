@@ -2,7 +2,7 @@
 ---
 <div class="row">
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-3 abbr">
+    <div class="col col-sm-3 abbr mt-1">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
@@ -22,7 +22,9 @@
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+          <abbr class="badge rounded" style="float: right; padding-left: 1em; padding-right: 1em;">
+            {{ entry.abbr }}
+          </abbr>
         {% endif %}
       {% endif %}
       {% if entry.preview %}

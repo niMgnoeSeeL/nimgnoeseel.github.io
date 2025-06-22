@@ -1,137 +1,178 @@
 {
-  // "basics": {
-  //   "name": "Seongmin Lee",
-  //   // "label": "Scientist",
-  //   "image": "",
-  //   "email": "TBA",
-  //   "phone": "TBA",
-  //   "url": "https://nimgnoeseel.github.io/",
-  //   "summary": "A postdoctoral researcher at UCLA's SEAL lab, specializing in scalable program analysis and statistical software testing, with prior experience at MPI-SP and a Ph.D. from KAIST",
-  //   "location": {
-  //     "address": "Engineering VI, Room 474",
-  //     "postalCode": "CA 90095",
-  //     "city": "Los Angeles",
-  //     "countryCode": "US",
-  //     "region": "California"
-  //   }
-  //   // "profiles": [
-  //   //   {
-  //   //     "network": "Twitter",
-  //   //     "username": "AlbertEinstein",
-  //   //     "url": "https://twitter.com/AlbertEinstein"
-  //   //   }
-  //   // ]
-  // },
-  // "work": [
+  "basics": {
+    "name": "Seongmin Lee",
+    // "label": "Scientist",
+    "image": "",
+    "email": "seongminlee@sigsoft.org",
+    "url": "https://nimgnoeseel.github.io/",
+    "summary": "A postdoctoral researcher at UCLA's SEAL lab, specializing in scalable program analysis and statistical software testing",
+    "location": {
+      "address": "Engineering VI, Room 474",
+      "postalCode": "CA 90095",
+      "city": "Los Angeles",
+      "countryCode": "US",
+      "region": "California"
+    }
+    // "profiles": [
+    //   {
+    //     "network": "Twitter",
+    //     "username": "AlbertEinstein",
+    //     "url": "https://twitter.com/AlbertEinstein"
+    //   }
+    // ]
+  },
+  "work": [
+    {
+      "name": "UCLA",
+      "location": "Los Angeles, CA, USA",
+      "position": "Postdoctoral Researcher",
+      "url": "https://web.cs.ucla.edu/~miryung/index.html",
+      "startDate": "2025-06-16",
+      "summary": "Working as a postdoctoral researcher at UCLA's SEAL lab, focusing on statistical software engineering."
+    },
+    {
+      "name": "Max Planck Institute for Security and Privacy (MPI-SP)",
+      "location": "Bochum, Germany",
+      "position": "Postdoctoral Researcher",
+      "url": "https://mpi-softsec.github.io/",
+      "startDate": "2022-09-01",
+      "endDate": "2025-06-15",
+      "summary": "Worked as a postdoctoral researcher at MPI-SP's Software Security group, focusing on statistical software testing and program analysis.",
+      "highlights": [
+        "Developed estimation techniques for residual risk in software testing.",
+        "Contributed to missing mass estimation in statistics, leading to a Spotlight presentation at ICLR 2025."
+      ]
+    }
+  ],
+  // "volunteer": [
   //   {
-  //     "name": "UCLA",
-  //     "location": "Los Angeles, CA, USA",
-  //     "position": "Postdoctoral Researcher",
-  //     "url": "https://web.cs.ucla.edu/~miryung/index.html",
-  //     "startDate": "2025-06-16",
-  //     // "endDate": "1955-01-01",
-  //     "summary": "Working as a postdoctoral researcher at UCLA's SEAL lab, focusing on statistical software engineering."
-  //     // "highlights": [
-  //     //   "Relativity"
-  //     // ]
+  //     "organization": "People's Climate March",
+  //     "location": "Zurich, Switzerland",
+  //     "position": "Lead Organizer",
+  //     "url": "https://example.com",
+  //     "startDate": "2014-04-01",
+  //     "endDate": "2015-07-01",
+  //     "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
+  //     "highlights": [
+  //       "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.",
+  //       "Men of the year 2014 by Time magazine"
+  //     ]
+  //   }
+  // ],
+  "education": [
+    {
+      "institution": "Korea Advanced Institute of Science and Technology (KAIST)",
+      "location": "Daejeon, South Korea",
+      "area": "School of Computing",
+      "studyType": "Doctor of Philosophy",
+      "startDate": "2016-09-01",
+      "endDate": "2022-08-31"
+    },
+    {
+      "institution": "Korea Advanced Institute of Science and Technology (KAIST)",
+      "location": "Daejeon, South Korea",
+      "area": "School of Computing",
+      "studyType": "Bachelor of Science",
+      "startDate": "2012-02-01",
+      "endDate": "2016-08-31",
+      "courses": [
+        "Double major in Department of Mathematical Sciences"
+      ]
+    }
+  ],
+  "Grants and Fellowships": [
+    {
+      "title": "Statistical Security Analysis for Large, Evolving Software",
+      "agency": "CASA - Cyber Security in the Age of Large-Scale Adversaries",
+      "grant_id": "DFG under Germany's Excellence Strategy - EXC 2092 CASA - 390781972",
+      "amount": "Salary according to the remuneration group E 14 TV-L (full time, ~ €136,000)",
+      "startDate": "2024-01-01",
+      "endDate": "2025-06-15",
+      "role": "Sole Principal Investigator (PI)"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Spotlight Paper Award",
+      "date": "2025-02-11",
+      "awarder": "13th International Conference on Learning Representations (ICLR'25) – Top 5% of accepted papers",
+      "summary": "Paper title: How Much is Unseen Depends Chiefly on Information About the Seen"
+    },
+    {
+      "title": "Distinguished Artifact Reviewer Award",
+      "date": "2024-08-14",
+      "awarder": "33rd USENIX Security Symposium (USENIX Security'24)"
+    },
+    {
+      "title": "Ph.D. Dissertation Award",
+      "date": "2022-08-29",
+      "awarder": "Korea Advanced Institute of Science and Technology (KAIST)"
+    }
+  ],
+  "services": {
+    "academic": {
+      "Program Comittee": "FSE'26, ICSE'26, QUATIC'25, FUZZING'25, LLanMER'25, CauSE'25, ASE'24, ISSTA'24, FUZZING'24, SCAM'24, ASE'23",
+      "Journal Reviewer": "TOSEM'25, TOSEM'24, TSE'24, IST'24, ASE'24, TOSEM'22, JSS'21, JSS'20"
+    },
+    "community": {
+      "Early Career Researcher (ECR) Board": {
+        "Organization": "CASA - Cyber Security in the Age of Large-Scale Adversaries",
+        "startDate": "2024-08-01",
+        "endDate": "2025-06-15",
+        "Role": "The ECR Board decides all funding allocations for the CASA Graduate School (CGS). The board has its own budget and the autonomy to dynamically adapt the programs to the changing needs of ECR members. Representing ECRs in CASA governance, the board organizes activities and meets quarterly to address priorities."
+      },
+      "Open Science Ambassador": {
+        "Organization": "Max Planck Institute for Security and Privacy (MPI-SP)",
+        "startDate": "2023-08-31",
+        "endDate": "2025-06-15",
+        "Role": "As representatives of the institute, Open Science Ambassadors raise awareness and provide valuable information to their colleagues about Open Science practices. They meet annually, in person or online, to discuss strategies, participate in workshops, and evaluate the status of Open Science within and beyond the Society."
+      }
+    }
+  },
+  // "certificates": [
+  //   {
+  //     "name": "Machine Learning",
+  //     "date": "2018-01-01",
+  //     "issuer": "Stanford University",
+  //     "url": "https://example.com",
+  //     "icon": "fa-solid fa-location-dot"
   //   },
   //   {
-  //     "name": "Max Planck Institute for Security and Privacy (MPI-SP)",
-  //     "location": "Bochum, Germany",
-  //     "position": "Postdoctoral Researcher",
-  //     "url": "https://mpi-softsec.github.io/",
-  //     "startDate": "2022-09-01",
-  //     "endDate": "2025-06-15",
-  //     "summary": "Worked as a postdoctoral researcher at MPI-SP's Software Security group, focusing on statistical software testing and program analysis.",
-  //     "highlights": [
-  //       "Developed estimation techniques for residual risk in software testing.",
-  //       "Contributed to missing mass estimation in statistics, leading to a Spotlight presentation at ICLR 2025."
-  //     ]
-  //   }
-  // ],
-  // // "volunteer": [
-  // //   {
-  // //     "organization": "People's Climate March",
-  // //     "location": "Zurich, Switzerland",
-  // //     "position": "Lead Organizer",
-  // //     "url": "https://example.com",
-  // //     "startDate": "2014-04-01",
-  // //     "endDate": "2015-07-01",
-  // //     "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-  // //     "highlights": [
-  // //       "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.",
-  // //       "Men of the year 2014 by Time magazine"
-  // //     ]
-  // //   }
-  // // ],
-  // "education": [
+  //     "name": "Quantum Computing",
+  //     "date": "2018-01-01",
+  //     "issuer": "Stanford University",
+  //     "url": "https://example.com",
+  //     "icon": "fa-solid fa-tag"
+  //   },
   //   {
-  //     "institution": "University of Zurich, Zurich, Switzerland",
-  //     "location": "Zurich, Switzerland",
-  //     "url": "https://www.uzh.ch/",
-  //     "area": "Software Development",
-  //     "studyType": "PhD",
-  //     "startDate": "1905-01-01",
-  //     "endDate": "1905-01-01",
-  //     "score": "10",
-  //     "courses": [
-  //       "Theory of Relativity"
-  //     ]
-  //   }
-  // ],
-  // "awards": [
+  //     "name": "Quantum Information",
+  //     "date": "2018-01-01",
+  //     "issuer": "Stanford University",
+  //     "url": "https://example.com",
+  //     "icon": "fa-solid fa-envelope"
+  //   },
   //   {
-  //     "title": "Nobel Prize in Physics",
-  //     "date": "1921-11-01",
-  //     "awarder": "Royal Swedish Academy of Sciences",
-  //     "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-  //     "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+  //     "name": "Quantum Cryptography",
+  //     "date": "2018-01-01",
+  //     "issuer": "Stanford University",
+  //     "url": "https://example.com",
+  //     "icon": "fa-solid fa-hashtag"
+  //   },
+  //   {
+  //     "name": "Quantum Communication",
+  //     "date": "2018-01-01",
+  //     "issuer": "Stanford University",
+  //     "url": "https://example.com",
+  //     "icon": "fa-solid fa-calendar"
+  //   },
+  //   {
+  //     "name": "Quantum Teleportation",
+  //     "date": "2018-01-01",
+  //     "issuer": "Stanford University",
+  //     "url": "https://example.com",
+  //     "icon": "fa-solid fa-clipboard-check"
   //   }
   // ],
-  // // "certificates": [
-  // //   {
-  // //     "name": "Machine Learning",
-  // //     "date": "2018-01-01",
-  // //     "issuer": "Stanford University",
-  // //     "url": "https://example.com",
-  // //     "icon": "fa-solid fa-location-dot"
-  // //   },
-  // //   {
-  // //     "name": "Quantum Computing",
-  // //     "date": "2018-01-01",
-  // //     "issuer": "Stanford University",
-  // //     "url": "https://example.com",
-  // //     "icon": "fa-solid fa-tag"
-  // //   },
-  // //   {
-  // //     "name": "Quantum Information",
-  // //     "date": "2018-01-01",
-  // //     "issuer": "Stanford University",
-  // //     "url": "https://example.com",
-  // //     "icon": "fa-solid fa-envelope"
-  // //   },
-  // //   {
-  // //     "name": "Quantum Cryptography",
-  // //     "date": "2018-01-01",
-  // //     "issuer": "Stanford University",
-  // //     "url": "https://example.com",
-  // //     "icon": "fa-solid fa-hashtag"
-  // //   },
-  // //   {
-  // //     "name": "Quantum Communication",
-  // //     "date": "2018-01-01",
-  // //     "issuer": "Stanford University",
-  // //     "url": "https://example.com",
-  // //     "icon": "fa-solid fa-calendar"
-  // //   },
-  // //   {
-  // //     "name": "Quantum Teleportation",
-  // //     "date": "2018-01-01",
-  // //     "issuer": "Stanford University",
-  // //     "url": "https://example.com",
-  // //     "icon": "fa-solid fa-clipboard-check"
-  // //   }
-  // // ],
   // "publications": [
   //   {
   //     "name": "Zur Elektrody/namik bewegter Körper",
@@ -155,70 +196,59 @@
   //     "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
   //   }
   // ],
-  // // "skills": [
-  // //   {
-  // //     "name": "Physics",
-  // //     "level": "Master",
-  // //     "icon": "fa-solid fa-hashtag",
-  // //     "keywords": [
-  // //       "Quantum Mechanics",
-  // //       "Quantum Computing",
-  // //       "Quantum Information",
-  // //       "Quantum Cryptography",
-  // //       "Quantum Communication",
-  // //       "Quantum Teleportation"
-  // //     ]
-  // //   }
-  // // ],
-  // // "languages": [
-  // //   {
-  // //     "language": "German",
-  // //     "fluency": "Native speaker",
-  // //     "icon": ""
-  // //   },
-  // //   {
-  // //     "language": "English",
-  // //     "fluency": "Fluent",
-  // //     "icon": ""
-  // //   }
-  // // ],
-  // // "interests": [
-  // //   {
-  // //     "name": "Physics",
-  // //     "icon": "fa-solid fa-tag",
-  // //     "keywords": [
-  // //       "Quantum Mechanics",
-  // //       "Quantum Computing",
-  // //       "Quantum Information",
-  // //       "Quantum Cryptography",
-  // //       "Quantum Communication",
-  // //       "Quantum Teleportation"
-  // //     ]
-  // //   }
-  // // ],
-  // "references": [
+  // "skills": [
   //   {
-  //     "name": "Professor John Doe",
-  //     "icon": "fa-solid fa-laptop",
-  //     "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+  //     "name": "Physics",
+  //     "level": "Master",
+  //     "icon": "fa-solid fa-hashtag",
+  //     "keywords": [
+  //       "Quantum Mechanics",
+  //       "Quantum Computing",
+  //       "Quantum Information",
+  //       "Quantum Cryptography",
+  //       "Quantum Communication",
+  //       "Quantum Teleportation"
+  //     ]
+  //   }
+  // ],
+  // "languages": [
+  //   {
+  //     "language": "German",
+  //     "fluency": "Native speaker",
+  //     "icon": ""
   //   },
   //   {
-  //     "name": "Professor John Doe",
-  //     "icon": "fa-solid fa-thumbtack",
-  //     "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+  //     "language": "English",
+  //     "fluency": "Fluent",
+  //     "icon": ""
   //   }
-  // ]
-  // // "projects": [
-  // //   {
-  // //     "name": "Quantum Computing",
-  // //     "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-  // //     "highlights": [
-  // //       "Quantum Teleportation",
-  // //       "Quantum Cryptography"
-  // //     ],
-  // //     "startDate": "2018-01-01",
-  // //     "endDate": "2018-01-01",
-  // //     "url": "https://example.com"
-  // //   }
-  // // ]
+  // ],
+  // "interests": [
+  //   {
+  //     "name": "Physics",
+  //     "icon": "fa-solid fa-tag",
+  //     "keywords": [
+  //       "Quantum Mechanics",
+  //       "Quantum Computing",
+  //       "Quantum Information",
+  //       "Quantum Cryptography",
+  //       "Quantum Communication",
+  //       "Quantum Teleportation"
+  //     ]
+  //   }
+  // ],
+  "references": [
+    {
+      "name": "Professor Shin Yoo",
+      "icon": "fa-solid fa-thumbtack",
+      "affiliation": "Korea Advanced Institute of Science and Technology (KAIST)",
+      "email": "shin.yoo@kaist.ac.kr"
+    },
+    {
+      "name": "Dr. Marcel Böhme",
+      "icon": "fa-solid fa-thumbtack",
+      "affiliation": "Max Planck Institute for Security and Privacy (MPI-SP)",
+      "email": "marcel.boehme@acm.org"
+    }
+  ]
 }

@@ -21,7 +21,8 @@
           <tr>
             <td></td>
             <td class="list-group-name">
-              <b>{{ content.reference }}</b>
+              {% if content.affiliation %}{{ content.affiliation }}<br>{% endif %}
+              {% if content.email %}<a href="mailto:{{ content.email }}">{{ content.email }}</a>{% endif %}
             </td>
           </tr>
         </tbody>

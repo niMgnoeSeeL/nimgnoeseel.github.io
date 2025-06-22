@@ -1,0 +1,74 @@
+<div class="service-section">
+  {% assign academic = data[1].academic %}
+  {% assign community = data[1].community %}
+
+  <!-- Academic Service -->
+  <h5 class="list-group-category">Academic Services</h5>
+  <table class="table table-cv table-sm table-borderless table-responsive table-cv-map">
+    {% for item in academic %}
+      <tr>
+        <td class="p-1 pr-2 font-weight-bold" style="white-space: nowrap;">
+          <b>{{ item[0] | capitalize }}</b>
+        </td>
+        <td class="p-1 pl-2 font-weight-light text">
+          <div style="font-size:0.97em; margin-top: 0.2em;">
+            {{ item[1] }}
+          </div>
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+
+  {% comment %} horizontal line {% endcomment %}
+  <hr class="my-4">
+
+  <!-- Community/Institutional Service -->
+  <h5 class="list-group-category">Community & Institutional Services</h5>
+  <ul class="card-text font-weight-light list-group list-group-flush">
+    {% for item in community %}
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
+          {% if item[1].startDate and item[1].startDate != '' %}
+            {% assign startDate = item[1].startDate | split: '-' | slice: 0, 2 | join: '.' %}
+            {% assign endDate = item[1].endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
+            {% assign date = startDate | append: ' - ' %}
+            {% assign date = date | append: endDate %}
+          {% else %}
+            {% assign date = null %}
+          {% endif %}
+          <table class="table-cv">
+            <tbody>
+              <tr>
+                <td>
+                  {% if date %}
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ date }} </span>
+                  {% endif %}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            <h6 class="title font-weight-bold ml-1 ml-md-4">
+              <span class="list-group-category-icon">
+                {% if item[1].icon %}
+                  <i class="{{ item[1].icon }}"></i>
+                {% else %}
+                  <i class="fa-solid fa-users"></i>
+                {% endif %}
+              </span>
+              <span class="list-group-category">{{ item[0] }}</span>
+              <div class="ml-1 ml-md-4" style="font-size:0.8rem">
+                <span class="text-muted">@ {{ item[1].Organization }}</span>
+              </div>
+            </h6>
+            <div class="ml-1 ml-md-4" style="font-size:0.7rem; font-style: italic">
+              {{ item[1].Role }}
+            </div>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
