@@ -639,14 +639,15 @@ jekyll_get_json:
 
 jsonresume:
   - basics
-  - work
   - education
+  - Academic Positions
   - publications
   - projects
   - volunteer
   - Grants and Fellowships
-  - awards
+  - Awards and Honors
   - services
+  - Invited Talks
   - certificates
   - skills
   - languages

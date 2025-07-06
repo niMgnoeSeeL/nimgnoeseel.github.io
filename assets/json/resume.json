@@ -21,7 +21,28 @@
     //   }
     // ]
   },
-  "work": [
+  "education": [
+    {
+      "institution": "Korea Advanced Institute of Science and Technology (KAIST)",
+      "location": "Daejeon, South Korea",
+      "area": "School of Computing",
+      "studyType": "Doctor of Philosophy",
+      "startDate": "2016-09-01",
+      "endDate": "2022-08-31"
+    },
+    {
+      "institution": "Korea Advanced Institute of Science and Technology (KAIST)",
+      "location": "Daejeon, South Korea",
+      "area": "School of Computing",
+      "studyType": "Bachelor of Science",
+      "startDate": "2012-02-01",
+      "endDate": "2016-08-31",
+      "courses": [
+        "Double major in Department of Mathematical Sciences"
+      ]
+    }
+  ],
+  "Academic Positions": [
     {
       "name": "UCLA",
       "location": "Los Angeles, CA, USA",
@@ -44,6 +65,9 @@
       ]
     }
   ],
+  "publications": [
+    {}
+  ],
   // "volunteer": [
   //   {
   //     "organization": "People's Climate March",
@@ -59,27 +83,6 @@
   //     ]
   //   }
   // ],
-  "education": [
-    {
-      "institution": "Korea Advanced Institute of Science and Technology (KAIST)",
-      "location": "Daejeon, South Korea",
-      "area": "School of Computing",
-      "studyType": "Doctor of Philosophy",
-      "startDate": "2016-09-01",
-      "endDate": "2022-08-31"
-    },
-    {
-      "institution": "Korea Advanced Institute of Science and Technology (KAIST)",
-      "location": "Daejeon, South Korea",
-      "area": "School of Computing",
-      "studyType": "Bachelor of Science",
-      "startDate": "2012-02-01",
-      "endDate": "2016-08-31",
-      "courses": [
-        "Double major in Department of Mathematical Sciences"
-      ]
-    }
-  ],
   "Grants and Fellowships": [
     {
       "title": "Statistical Security Analysis for Large, Evolving Software",
@@ -91,7 +94,7 @@
       "role": "Sole Principal Investigator (PI)"
     }
   ],
-  "awards": [
+  "Awards and Honors": [
     {
       "title": "Spotlight Paper Award",
       "date": "2025-02-11",
@@ -111,6 +114,7 @@
   ],
   "services": {
     "academic": {
+      "Organizing Committee": "SBST'26, SSBSE'25 (RENE/NIER Track)",
       "Program Comittee": "FSE'26, ICSE'26, QUATIC'25, FUZZING'25, LLanMER'25, CauSE'25, ASE'24, ISSTA'24, FUZZING'24, SCAM'24, ASE'23",
       "Journal Reviewer": "TOSEM'25, TOSEM'24, TSE'24, IST'24, ASE'24, TOSEM'22, JSS'21, JSS'20"
     },
@@ -237,6 +241,9 @@
   //     ]
   //   }
   // ],
+  "Invited Talks": [
+    {}
+  ],
   "references": [
     {
       "name": "Professor Shin Yoo",
