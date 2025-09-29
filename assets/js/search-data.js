@@ -119,6 +119,12 @@ ninja.data = [{
           section: "News",},{id: "news-mortar-board-i-have-been-invited-to-serve-as-a-program-committee-member-for-fse-2026",
           title: ':mortar_board: I have been invited to serve as a program committee member for...',
           description: "",
+          section: "News",},{id: "news-mortar-board-i-have-been-invited-to-serve-as-an-organizing-committee-member-for-the-19th-international-workshop-on-search-based-and-fuzz-testing-sbft-2026-and-the-rene-nier-track-at-the-17th-symposium-on-search-based-software-engineering-2025-ssbse-2025",
+          title: ':mortar_board: I have been invited to serve as an organizing committee member for...',
+          description: "",
+          section: "News",},{id: "news-tada-our-paper-cottontail-llm-driven-concolic-execution-for-highly-structured-test-input-generation-has-been-accepted-to-appear-at-ieee-s-amp-amp-p-2026-congratulations-to-the-entire-team",
+          title: ':tada: Our paper “Cottontail: LLM-Driven Concolic Execution for Highly Structured Test Input Generation”...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
