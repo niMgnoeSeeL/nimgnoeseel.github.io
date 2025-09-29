@@ -12,7 +12,7 @@ profile:
     <p>+1 (310) 806-7239</p>
     <p>University of California, Los Angeles</p>
     <p>Computer Science Department</p>
-    <p>Engineering VI, Room 474</p>
+    <p>Engineering VI, Room 486</p>
     <p>Los Angeles, CA 90095</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
