@@ -125,6 +125,9 @@ ninja.data = [{
           section: "News",},{id: "news-tada-our-paper-cottontail-llm-driven-concolic-execution-for-highly-structured-test-input-generation-has-been-accepted-to-appear-at-ieee-s-amp-amp-p-2026-congratulations-to-the-entire-team",
           title: ':tada: Our paper “Cottontail: LLM-Driven Concolic Execution for Highly Structured Test Input Generation”...',
           description: "",
+          section: "News",},{id: "news-tada-our-paper-dependency-aware-residual-risk-analysis-has-been-accepted-to-appear-at-icse-2026-congrats-marcel",
+          title: ':tada: Our paper “Dependency-aware Residual Risk Analysis” has been accepted to appear at...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
