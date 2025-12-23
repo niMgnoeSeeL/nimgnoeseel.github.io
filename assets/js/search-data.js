@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
+        },{id: "nav-resources",
+          title: "resources",
+          description: "Resources and materials for open science and reproducible research.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/resources/";
+          },
         },{id: "nav-blog",
           title: "blog",
           description: "",
