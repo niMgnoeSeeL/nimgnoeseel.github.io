@@ -128,6 +128,9 @@ ninja.data = [{
           section: "News",},{id: "news-tada-our-paper-dependency-aware-residual-risk-analysis-has-been-accepted-to-appear-at-icse-2026-congrats-marcel",
           title: ':tada: Our paper “Dependency-aware Residual Risk Analysis” has been accepted to appear at...',
           description: "",
+          section: "News",},{id: "news-tada-our-paper-in-bugs-we-trust-on-measuring-the-randomness-of-a-fuzzer-benchmarking-outcome-has-been-accepted-to-appear-at-fse-2026-congrats-to-our-amazing-team",
+          title: ':tada: Our paper “In Bugs We Trust? On Measuring the Randomness of a...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
