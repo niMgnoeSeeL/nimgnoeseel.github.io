@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:tada: Our paper "Dependency-aware Residual Risk Analysis" has been accepted to appear at ICSE 2026! Congrats Marcel!
+:tada: Our paper "Dependency-aware Residual Risk Analysis" has been accepted to appear at ICSE 2026! Congrats, Marcel!

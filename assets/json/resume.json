@@ -98,7 +98,7 @@
     {
       "title": "Spotlight Paper Award",
       "date": "2025-02-11",
-      "awarder": "13th International Conference on Learning Representations (ICLR'25) – Top 5% of accepted papers",
+      "awarder": "13th International Conference on Learning Representations (ICLR'25) - Top 5% of accepted papers",
       "summary": "Paper title: How Much is Unseen Depends Chiefly on Information About the Seen"
     },
     {
@@ -115,7 +115,7 @@
   "services": {
     "academic": {
       "Organizing Committee": "SBST'26, SSBSE'25 (RENE/NIER Track)",
-      "Program Comittee": "FSE'26, ICSE'26, QUATIC'25, FUZZING'25, LLanMER'25, CauSE'25, ASE'24, ISSTA'24, FUZZING'24, SCAM'24, ASE'23",
+      "Program Comittee": "FUZZING'26, FSE'26, ICSE'26,, QUATIC'25, FUZZING'25, LLanMER'25, CauSE'25, ASE'24, ISSTA'24, FUZZING'24, SCAM'24, ASE'23",
       "Journal Reviewer": "TOSEM'25, TOSEM'24, TSE'24, IST'24, ASE'24, TOSEM'22, JSS'21, JSS'20"
     },
     "community": {
@@ -183,7 +183,7 @@
   //     "publisher": "Annalen der Physik",
   //     "releaseDate": "1905-06-30",
   //     "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-  //     "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+  //     "summary": "It concerned an interpretation of the Michelson-Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
   //   },
   //   {
   //     "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
@@ -197,7 +197,7 @@
   //     "publisher": "Annalen der Physik",
   //     "releaseDate": "1916-03-20",
   //     "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-  //     "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+  //     "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909-1911) and Prague (1911-1912), before he returned to ETH Zurich (1912-1914)."
   //   }
   // ],
   // "skills": [
@@ -246,7 +246,7 @@
   ],
   "references": [
     {
-      "name": "Professor Shin Yoo",
+      "name": "Prof. Shin Yoo",
       "icon": "fa-solid fa-thumbtack",
       "affiliation": "Korea Advanced Institute of Science and Technology (KAIST)",
       "email": "shin.yoo@kaist.ac.kr"
@@ -256,6 +256,12 @@
       "icon": "fa-solid fa-thumbtack",
       "affiliation": "Max Planck Institute for Security and Privacy (MPI-SP)",
       "email": "marcel.boehme@acm.org"
+    },
+    {
+      "name": "Prof. Miryung Kim",
+      "icon": "fa-solid fa-thumbtack",
+      "affiliation": "University of California, Los Angeles (UCLA)",
+      "email": "miryung@cs.ucla.edu"
     }
   ]
 }
