@@ -115,7 +115,7 @@
   "services": {
     "academic": {
       "Organizing Committee": "SBST'26, SSBSE'25 (RENE/NIER Track)",
-      "Program Comittee": "CauSE'26, FUZZING'26, FSE'26, ICSE'26, QUATIC'25, FUZZING'25, LLanMER'25, CauSE'25, ASE'24, ISSTA'24, FUZZING'24, SCAM'24, ASE'23",
+      "Program Comittee": "ASE'26, CauSE'26, FUZZING'26, FSE'26, ICSE'26, QUATIC'25, FUZZING'25, LLanMER'25, CauSE'25, ASE'24, ISSTA'24, FUZZING'24, SCAM'24, ASE'23",
       "Journal Reviewer": "ASE'26, SQJ'25, TOSEM'25, TOSEM'24, TSE'24, IST'24, ASE'24, TOSEM'22, JSS'21, JSS'20"
     },
     "community": {
