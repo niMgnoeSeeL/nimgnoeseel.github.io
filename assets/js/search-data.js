@@ -141,6 +141,9 @@ ninja.data = [{
           section: "News",},{id: "news-mortar-board-i-have-been-invited-to-serve-as-a-program-committee-pc-of-the-41st-ieee-acm-international-conference-on-automated-software-engineering-ase-2026",
           title: ':mortar_board: I have been invited to serve as a Program Committee (PC) of...',
           description: "",
+          section: "News",},{id: "news-tada-our-paper-evaluating-llm-based-regression-test-generation-has-been-accepted-to-appear-at-fse-2026-congrats-to-our-amazing-team",
+          title: ':tada: Our paper “Evaluating LLM-based Regression Test Generation” has been accepted to appear...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
