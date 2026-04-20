@@ -721,6 +721,23 @@ footer.sticky-bottom {
     text-align: right;
   }
 
+  &.selected-publications h2.bibliography {
+    border-top: none;
+    padding: 0 0 0 2rem;
+    margin: 0;
+    float: right;
+    height: 0;
+    overflow: visible;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--global-divider-color);
+    position: relative;
+    z-index: 1;
+    margin-top: 0.5rem;
+    margin-right: -3rem;
+  }
+
   ol.bibliography {
     list-style: none;
     padding: 0;
