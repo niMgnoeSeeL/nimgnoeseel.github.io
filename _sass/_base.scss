@@ -229,7 +229,8 @@ ul.task-list input[type="checkbox"] {
 
 .post-description {
   margin-bottom: 2rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
+  color: var(--global-text-color-light);
 
   a {
     color: inherit;
@@ -715,7 +716,7 @@ footer.sticky-bottom {
 
 
   h2.bibliography {
-    color: var(--global-divider-color);
+    color: var(--global-text-color-light);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;
@@ -733,7 +734,7 @@ footer.sticky-bottom {
     font-size: 2rem;
     font-weight: 400;
     line-height: 1;
-    color: var(--global-divider-color);
+    color: var(--global-text-color-light);
     position: relative;
     z-index: 1;
     margin-top: 0.5rem;
@@ -748,7 +749,15 @@ footer.sticky-bottom {
     li {
       margin-bottom: 1rem;
 
-      .preview {
+      .abbr figure {
+        margin: 0;
+      }
+
+      img.preview {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        display: block;
       }
 
       .abbr {
@@ -1251,7 +1260,21 @@ ninja-keys::part(ninja-input-wrapper) {
   padding: 8px 12px;
 }
 
+.bibsearch-form-input {
+  display: block;
+  margin: 0 0 1.5rem auto;
+  max-width: 240px;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border-color: var(--global-divider-color);
+  box-shadow: none;
+}
+
 .newsletter-form-input:focus {
+  border-color: var(--global-theme-color) !important;
+}
+
+.bibsearch-form-input:focus {
   border-color: var(--global-theme-color) !important;
 }
 
@@ -1457,9 +1480,8 @@ figure.cover {
 
 .pub-year {
   font-size: 2rem;
-  color: #e0e0e0;  // 줄 색과 동일
+  color: var(--global-text-color-light);
   text-align: right;
-  // padding-right: 10px;
   margin-top: 60px;
   margin-bottom: 10px;
   position: relative;
@@ -1472,8 +1494,8 @@ figure.cover {
   top: -10px;
   width: 100%;
   height: 1px;
-  background-color: #e0e0e0;  // 줄 색
-  opacity: 1.0;               // 줄도 명확히
+  background-color: var(--global-divider-color);
+  opacity: 1.0;
 }
 
 .timeline-item {
