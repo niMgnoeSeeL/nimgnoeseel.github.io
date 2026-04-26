@@ -713,6 +713,7 @@ footer.sticky-bottom {
     }
   }
 
+
   h2.bibliography {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
@@ -720,6 +721,7 @@ footer.sticky-bottom {
     margin-top: 2rem;
     text-align: right;
   }
+
 
   &.selected-publications h2.bibliography {
     border-top: none;
@@ -893,6 +895,16 @@ footer.sticky-bottom {
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
     }
+  }
+}
+
+h2.selected-publications-heading {
+  .equal-contribution-note {
+    margin-left: 0.75rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--global-text-color);
+    vertical-align: baseline;
   }
 }
 
