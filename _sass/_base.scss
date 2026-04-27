@@ -907,6 +907,40 @@ footer.sticky-bottom {
   }
 }
 
+// Custom click-to-zoom for publication preview thumbnails.
+img.preview {
+  cursor: zoom-in;
+}
+
+.preview-zoom-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+  opacity: 0;
+  transition: opacity 0.18s ease;
+  padding: 2rem;
+}
+
+.preview-zoom-overlay.open {
+  opacity: 1;
+}
+
+.preview-zoom-overlay img {
+  max-width: min(720px, 90vw);
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  object-fit: contain;
+  cursor: zoom-out;
+}
+
 h2.selected-publications-heading {
   .equal-contribution-note {
     margin-left: 0.75rem;
