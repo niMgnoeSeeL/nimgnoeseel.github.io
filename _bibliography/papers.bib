@@ -10,6 +10,13 @@
   selected = {true},
   preview = {llm-regression-image.png},
   artifact = {https://github.com/niMgnoeSeeL/cleverest},
+  abstract = {
+    Large Language Models (LLMs) have shown tremendous promise in automated software engineering. In this paper, we investigate the opportunities of LLMs for just-in-time regression test generation for programs, like parsers, interpreters, or compilers, that take highly structured, human-readable inputs. When a new bug fix or code change is committed, the repository (as part of the CI/CD workflow) runs an LLM for a few minutes to generate regression test cases for that commit that exercise the changed code and potentially trigger any bugs.
+
+    Specifically, we investigate LLM-based regression test generation as a machine translation task that takes the developer-provided commit message, the code change, and the name of the input format (e.g., XML) and produces regression test cases for the described change in the given input format. In our experiments testing 72 commits to Mujs, Libxml2, Poppler, JerryScript, Z3, PHP, JQ, and MicroPython, our feedback-directed, zero-shot LLM-based prototype Cleverest performed well, even if we did not provide the code change. In under 2 minutes, on average, Cleverest found as many bugs as the state-of-the-art directed greybox fuzzer WAFLGo in 24 hours, even though WAFLGo started with a commit-reaching seed corpus in the majority of cases. If we amplify the Cleverest-generated test cases using those as a seed corpus in coverage-guided greybox fuzzing, the number of bugs found doubles. We call the integration with fuzzing as ClevFuzz.
+
+    In addition, we found that some commit messages are more expressive than others, thus we wonder how this impacts the effectiveness of Cleverest. Our results above demonstrate that Cleverest picks up on the change intention. For instance, if the commit message describes that this patch changes how floating point variables are treated in the Mujs JavaScript interpreter, then Cleverest generates JavaScript programs that contain floating point variables. To study the impact of expressiveness, we change the commit messages minimally to reduce and increase the information in the commit message, respectively, and find a substantial impact on effectiveness. For instance, adding 17 words on average (max. 43) to make ineffective commit messages more expressive significantly increased the number of bugs found.
+  },
 }
 
 @inproceedings{FSE26-concordance,
@@ -22,6 +29,14 @@
   bibtex_show = {true},
   abbr = {FSE},
   selected = {true},
+  abstract = {
+    In Google's FuzzBench platform, we find that the outcome of coverage-based evaluation more strongly agrees with the outcome of a bug-based evaluation than an independent bug-based evaluation itself. Recently, Böhme et al. found that despite a very strong correlation between coverage achieved and bugs found, there is no strong agreement between the outcome of a coverage- and a bug-based evaluation: The fuzzer best at achieving coverage may be the worst at finding bugs. However, in trying to explain this moderate agreement, we wondered whether the outcome of bug-based benchmarking itself is perhaps much more “noisy” and turned to applied statistics to develop the tools necessary to investigate our hypothesis.
+
+    In this paper, we call this degree of “noisiness” of a benchmarking outcome the concordance of the benchmarking procedure and quantify it using a measure of statistical reliability widely used in psychology, called mean split-half reliability, i.e., the expected agreement on the benchmark outcome between two random halves of the benchmarking suite. In our experiments with FuzzBench and Magma, we find that the concordance of coverage-based benchmarking is consistently strong while that of bug-based benchmarking is weak on FuzzBench and moderate on Magma. In contrast to FuzzBench, for the Magma benchmark suite (which was designed for bug-based evaluation) a coverage-based evaluation does not predict the outcome of a bug-based evaluation better than an independent bug-based evaluation.
+
+    Moreover, to demonstrate the utility of concordance also for developers of benchmarking suites, we investigate concordance as a measure of benchmarking efficiency, as in green fuzzer benchmarking. We empirically confirm that the resources of a procedure with higher concordance can be reduced more substantially (in terms of campaign length or benchmark sampling size) while maintaining a similar benchmark outcome as a procedure with lower concordance. We report the corresponding savings in terms of carbon emissions.
+  },
+  artifact = {https://github.com/ardier/in_bugs_we_trust/},
 }
 
 @inproceedings{lee2025dependenceResidual,
@@ -37,6 +52,13 @@
   abbr = {ICSE},
   selected = {true},
   preview = {structrr-image.png},
+  abstract = {
+    However much we test a software system, some <em>residual risk</em> of undiscovered bugs always remains. If we model test generation as a sampling process, the residual risk can be defined as the probability that the next test input reveals a bug. This risk is upper-bounded by the <em>discovery probability (DP)</em>, i.e., the probability that the next test input covers new code, which itself is upper-bounded by the <em>coverage rate</em>, i.e., the expected number of new coverage elements per test input. Prior work introduced the <em>Good-Turing estimator (GoTu)</em> to estimate residual risk via coverage rate. However, we find that GoTu substantially overestimates, leading to undue optimism in bug finding because (i) the coverage rate is only a loose upper bound, and (ii) GoTu ignores <em>dependencies</em> among coverage elements.
+
+    We propose <em>dependency-aware DP estimation</em> for residual risk analysis. Our estimator directly estimates DP <em>and</em> accounts for dependencies among coverage elements using <em>Ma and Chao</em>'s sample coverage estimation. A naive implementation requires space proportional to the number of coverage elements and executions, which can be prohibitively large. To make it practical, we introduce two optimizations: dependency-aware node removal, which reduces the number of coverage elements to observe, and online singleton cluster maintenance, which eliminates the need to record observed coverage elements in each execution.
+
+    A comparison of our estimator and GoTu on real-world software from FuzzBench demonstrates a substantial reduction in estimation error. If we stopped the campaign when the estimate of residual risk fell below a certain threshold, GoTu would lead a tester to waste 7× more time than our estimator before deciding to stop. Our estimator achieves a median absolute error of only one-fifth that of GoTu. Finally, our bug-based analysis shows that our estimator achieves one to two orders of magnitude lower error than GoTu.
+  },
 }
 
 @inproceedings{Cottontail,
@@ -50,6 +72,14 @@
   bibtex_show = {true},
   abbr={S\&P},
   selected = {true},
+  abstract = {
+    How can we perform concolic execution to generate highly structured test inputs for systematically testing parsing programs? Existing concolic execution engines are significantly restricted by (1) input structure-agnostic path constraint selection, leading to the waste of testing effort or missing coverage; (2) limited constraint-solving capability, yielding many syntactically invalid test inputs; (3) reliance on manual acquisition of highly structured seed inputs, resulting in non-continuous testing.
+
+    This paper proposes Cottontail, a new Large Language Model (LLM)-driven concolic execution engine, to mitigate the above limitations. A more complete program path representation, named Expressive Structural Coverage Tree (ESCT), is first constructed to select structure-aware path constraints. Later, an LLM-driven constraint solver based on a Solve-Complete paradigm is designed to solve the path constraints smartly to get test inputs that are not only satisfiable to the constraints but also valid to the input syntax. Finally, a history-guided seed acquisition is employed to obtain new highly structured test inputs either before testing starts or after testing is saturated.
+  
+    We implemented Cottontail on top of SymCC and evaluated eight extensively tested open-source libraries across four different formats (XML, SQL, JavaScript, and JSON). Cottontail significantly outperforms baseline approaches by 30.73% and 41.32% on average in terms of line and branch coverage. Besides, Cottontail found six previously unknown vulnerabilities (six CVEs assigned). We have reported these issues to developers, and four out of them have been fixed so far.
+  },
+  artifact = {https://github.com/Cottontail-Proj/cottontail},
 }
 
 @inproceedings{kimRefiningFuzzedCrashing2025,

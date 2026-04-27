@@ -370,7 +370,7 @@
     {% if entry.abstract %}
       <!-- Hidden abstract block -->
       <div class="abstract hidden">
-        <p>{{ entry.abstract }}</p>
+        {{ entry.abstract | clean_latex | paragraphize }}
       </div>
     {% endif %}
 
