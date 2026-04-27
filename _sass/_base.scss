@@ -724,21 +724,24 @@ footer.sticky-bottom {
   }
 
 
+  &.selected-publications {
+    position: relative;
+  }
+
   &.selected-publications h2.bibliography {
     border-top: none;
-    padding: 0 0 0 2rem;
+    padding: 0;
     margin: 0;
-    float: right;
+    position: absolute;
+    right: -3rem;
     height: 0;
     overflow: visible;
     font-size: 2rem;
     font-weight: 400;
     line-height: 1;
     color: var(--global-text-color-light);
-    position: relative;
     z-index: 1;
-    margin-top: 0.5rem;
-    margin-right: -3rem;
+    transform: translateY(0.5rem);
   }
 
   ol.bibliography {
@@ -750,14 +753,35 @@ footer.sticky-bottom {
       margin-bottom: 1rem;
 
       .abbr figure {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; // 9/16 — locks figure to 16:9
         margin: 0;
+        overflow: hidden;
+        border-radius: 4px;
+        box-shadow:
+          0 2px 5px 0 rgba(0, 0, 0, 0.16),
+          0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      }
+
+      .abbr picture {
+        position: absolute;
+        inset: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
       }
 
       img.preview {
+        position: absolute;
+        inset: 0;
         width: 100%;
-        aspect-ratio: 16 / 9;
+        height: 100%;
         object-fit: cover;
         display: block;
+        box-shadow: none;
       }
 
       .abbr {
