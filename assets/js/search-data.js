@@ -147,6 +147,9 @@ ninja.data = [{
           section: "News",},{id: "news-mortar-board-i-have-been-invited-to-serve-as-a-program-committee-pc-of-the-international-symposium-on-empirical-software-engineering-and-measurement-esem-2026",
           title: ':mortar_board: I have been invited to serve as a Program Committee (PC) of...',
           description: "",
+          section: "News",},{id: "news-mortar-board-i-have-been-invited-to-serve-as-a-program-committee-pc-of-the-acm-international-conference-on-the-foundations-of-software-engineering-fse-2027-next-year",
+          title: ':mortar_board: I have been invited to serve as a Program Committee (PC) of...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
