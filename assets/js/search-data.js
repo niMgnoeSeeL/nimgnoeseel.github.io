@@ -150,6 +150,12 @@ ninja.data = [{
           section: "News",},{id: "news-mortar-board-i-have-been-invited-to-serve-as-a-program-committee-pc-of-the-acm-international-conference-on-the-foundations-of-software-engineering-fse-2027-next-year",
           title: ':mortar_board: I have been invited to serve as a Program Committee (PC) of...',
           description: "",
+          section: "News",},{id: "news-mortar-board-i-have-been-invited-to-serve-as-an-external-reviewer-for-the-acm-sigplan-symposium-on-principles-of-programming-languages-popl-2027",
+          title: ':mortar_board: I have been invited to serve as an external reviewer for the...',
+          description: "",
+          section: "News",},{id: "news-tada-our-paper-accurate-and-low-cost-residual-risk-assessment-via-sampled-profiling-and-structure-aware-coverage-amplification-has-been-accepted-to-appear-at-ase-2026-congrats-to-our-amazing-team",
+          title: ':tada: Our paper “Accurate and Low-Cost Residual Risk Assessment via Sampled Profiling and...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
