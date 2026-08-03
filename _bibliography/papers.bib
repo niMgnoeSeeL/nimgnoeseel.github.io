@@ -6,7 +6,15 @@
   eventtitle = {2026 41st {{IEEE}}/{{ACM International Conference}} on {{Automated Software Engineering}} ({{ASE}})},
   abbr = {ASE},
   selected = {true},
-  month = oct
+  month = oct,
+  pdf = {profrr-paper.pdf},
+  artifact = {https://doi.org/10.5281/zenodo.19244795},
+  bibtex_show = {true},
+  abstract = {
+    Estimating the <em>residual risk</em> of undiscovered bugs—and thus when to stop fuzzing—is critical for determining testing adequacy. Traditionally, this assessment relies on coverage instrumentation, which records <em>complete coverage</em> of every execution but imposes a 60–70\% performance slowdown, reducing fuzzing throughput and delaying bug discovery. This overhead raises a fundamental question: <em>can partial observation provide high-fidelity confidence at a fraction of the coverage instrumentation cost?</em>
+
+    We propose a risk assessment method in the context of <em>black-box fuzzing</em> that leverages <em>hardware-enabled performance profiling</em>—replacing coverage instrumentation with instruction pointer (IP) sampling—as the core mechanism for low-overhead observation. To recover the accuracy inevitably lost to the sparse nature of sampling, we employ <em>must-execute analysis</em>, a static control-flow analysis that identifies all statements and basic blocks that <em>must</em> have executed to reach, or must execute after, an observed sample, effectively reconstructing missing execution paths from partial observations. Despite the partial coverage inherent to profiler-based sampling, our risk estimation method achieves 4.27× higher throughput than complete-coverage instrumentation, enabling fuzzing campaigns to reach stopping thresholds 2× faster while maintaining high accuracy (1.73 average relative error compared to the ground truth). Ultimately, this efficiency translates into superior bug discovery, triggering more bugs with speedups of up to 10× within the same time budget.
+  },
 }
 
 
