@@ -1645,8 +1645,8 @@ figure.cover {
   margin-bottom: 1.8rem;
   padding: 1.2rem 1rem 1rem 1.5rem;
   border-radius: 0.6rem;
-  background-color: #f8f9fa;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+  background-color: var(--global-timeline-bg-color);
+  box-shadow: var(--global-timeline-shadow);
 }
 
 .timeline-item h5.title {
