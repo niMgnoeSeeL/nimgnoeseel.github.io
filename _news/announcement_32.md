@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:mortar_board: I am thrilled to announce that I will be joining the [Department of Computer Science and Engineering](https://cse.postech.ac.kr/) at [POSTECH](https://www.postech.ac.kr/) as an Assistant Professor in February 2027! I am recruiting M.S./Ph.D. students and undergraduate research interns. Please see the [homepage](/) for details.
+:mortar_board: I am thrilled to announce that I will be joining the [Department of Computer Science and Engineering](https://cse.postech.ac.kr/) at [POSTECH](https://www.postech.ac.kr/) as an Assistant Professor in February 2027! I am recruiting M.S./Ph.D. students and undergraduate research interns. Interested? [Join us!](/join/)
