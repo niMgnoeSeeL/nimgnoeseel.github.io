@@ -740,19 +740,23 @@ footer.sticky-bottom {
     position: relative;
   }
 
-  &.selected-publications h2.bibliography {
-    border-top: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    right: -3rem;
-    height: 0;
-    overflow: visible;
-    font-size: 2rem;
-    line-height: 1;
-    color: var(--global-text-color-light);
-    z-index: 1;
-    transform: translateY(0.5rem);
+  // The year sits in the right margin only when the container leaves room for it;
+  // below 992px it falls back to the regular h2.bibliography divider above.
+  @media (min-width: 992px) {
+    &.selected-publications h2.bibliography {
+      border-top: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      right: -3rem;
+      height: 0;
+      overflow: visible;
+      font-size: 2rem;
+      line-height: 1;
+      color: var(--global-text-color-light);
+      z-index: 1;
+      transform: translateY(0.5rem);
+    }
   }
 
   ol.bibliography {
@@ -968,7 +972,7 @@ img.preview {
 .preview-zoom-overlay img {
   max-width: min(720px, 90vw);
   max-height: 80vh;
-  width: auto;
+  width: min(720px, 90vw); // fixed so the swap from thumbnail to original does not resize the overlay
   height: auto;
   border-radius: 6px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
@@ -1692,4 +1696,16 @@ figure.cover {
   flex-direction: column;
   gap: 0.5rem;
   min-width: 100px; // optional
+}
+
+@media (max-width: 576px) {
+  .talk-content {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .talk-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

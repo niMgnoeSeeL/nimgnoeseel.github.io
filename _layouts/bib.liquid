@@ -36,10 +36,9 @@
             include figure.liquid
             loading="eager"
             path=entry_path
-            sizes = "4096px"
+            sizes = "(min-width: 576px) 205px, 95vw"
             class="preview z-depth-1 rounded"
             zoomable=false
-            avoid_scaling=true
             alt=entry.preview
           %}
         {% endif %}
