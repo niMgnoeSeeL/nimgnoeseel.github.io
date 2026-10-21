@@ -152,7 +152,7 @@ ninja.data = [{
           section: "News",},{id: "news-tada-our-paper-agentic-proof-and-property-based-testing-via-property-templates-in-data-intensive-computing-has-been-accepted-to-appear-at-icse-2027-congrats-to-my-amazing-co-authors-thaddy-and-miryung",
           title: ':tada: Our paper “Agentic Proof and Property-Based Testing via Property-Templates in Data-Intensive Computing”...',
           description: "",
-          section: "News",},{id: "news-mortar-board-i-am-thrilled-to-announce-that-i-will-be-joining-the-department-of-computer-science-and-engineering-at-postech-as-an-assistant-professor-in-february-2027-i-am-recruiting-m-s-ph-d-students-and-undergraduate-research-interns-please-see-the-homepage-for-details",
+          section: "News",},{id: "news-mortar-board-i-am-thrilled-to-announce-that-i-will-be-joining-the-department-of-computer-science-and-engineering-at-postech-as-an-assistant-professor-in-february-2027-i-am-recruiting-m-s-ph-d-students-and-undergraduate-research-interns-interested-join-us",
           title: ':mortar_board: I am thrilled to announce that I will be joining the Department...',
           description: "",
           section: "News",},{
