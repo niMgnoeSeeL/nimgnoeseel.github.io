@@ -29,6 +29,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+> 🎓 **I will join the [Department of Computer Science and Engineering](https://cse.postech.ac.kr/) at [POSTECH](https://www.postech.ac.kr/) as an Assistant Professor in February 2027.**
+{: .block-tip .announcement }
+
+> 📢 **I am recruiting!** I am looking for motivated M.S., Ph.D., and integrated M.S.–Ph.D. students, as well as undergraduate research interns, who are excited about program analysis and software testing. If you are interested, please email me at <a href="mailto:seongminlee@sigsoft.org">seongminlee@sigsoft.org</a> with your CV and a brief description of your research interests.
+{: .block-danger .announcement }
+
 I am a postdoctoral researcher at the Software Evolution and Analysis Laboratory (SEAL) at UCLA, working with
 <a href="https://web.cs.ucla.edu/~miryung/">Prof. Miryung Kim</a>. 
 
