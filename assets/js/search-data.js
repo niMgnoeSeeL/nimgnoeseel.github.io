@@ -37,13 +37,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/resources/";
           },
-        },{id: "nav-blog",
-          title: "blog",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
         },{id: "post-the-sequel-of-the-paper-quot-causal-program-dependence-analysis-quot",
         
           title: "The sequel of the paper &quot;Causal Program Dependence Analysis&quot;",
@@ -155,6 +148,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-tada-our-paper-accurate-and-low-cost-residual-risk-assessment-via-sampled-profiling-and-structure-aware-coverage-amplification-has-been-accepted-to-appear-at-ase-2026-congrats-to-our-amazing-team",
           title: ':tada: Our paper “Accurate and Low-Cost Residual Risk Assessment via Sampled Profiling and...',
+          description: "",
+          section: "News",},{id: "news-tada-our-paper-agentic-proof-and-property-based-testing-via-property-templates-in-data-intensive-computing-has-been-accepted-to-appear-at-icse-2027-congrats-to-my-amazing-co-authors-thaddy-and-miryung",
+          title: ':tada: Our paper “Agentic Proof and Property-Based Testing via Property-Templates in Data-Intensive Computing”...',
           description: "",
           section: "News",},{
         id: 'social-email',
