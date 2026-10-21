@@ -37,29 +37,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/resources/";
           },
-        },{id: "post-the-sequel-of-the-paper-quot-causal-program-dependence-analysis-quot",
-        
-          title: "The sequel of the paper &quot;Causal Program Dependence Analysis&quot;",
-        
-        description: "Lessons learned from phd journey",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/sequal-of-cpda/";
-          
-        },
-      },{id: "post-until-scabs-form-and-calluses-build-up-딱지가-앉고-굳은살이-배길-때-까지-quot",
-        
-          title: "Until scabs form and calluses build up | 딱지가 앉고 굳은살이 배길 때...",
-        
-        description: "Why am I starting a blog?",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/blog-start/";
-          
-        },
-      },{id: "news-mortar-board-i-successfully-defended-my-ph-d-thesis",
+        },{id: "news-mortar-board-i-successfully-defended-my-ph-d-thesis",
           title: ':mortar_board: I successfully defended my Ph.D. thesis.',
           description: "",
           section: "News",},{id: "news-microphone-i-presented-an-invited-talk-at-handong-global-university-on-statistical-program-dependence-analysis",
