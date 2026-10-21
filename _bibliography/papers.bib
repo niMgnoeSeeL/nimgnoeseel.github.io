@@ -1,3 +1,23 @@
+@inproceedings{ICSE27-propertytemplate,
+  title = {Agentic Proof and Property-Based Testing via Property-Templates in Data-Intensive Computing},
+  author = {Lee*, Seongmin and Wu*, Yaoxuan and Kim, Miryung},
+  booktitle = {Proceedings of the {{IEEE}}/{{ACM}} 49th {{International Conference}} on {{Software Engineering}} (ICSE'27)},
+  year = {2027},
+  abbr = {ICSE},
+  selected = {true},
+  month = apr,
+  pdf = {propertytemplate-paper.pdf},
+  preview = {propertytemplate-image.png},
+  artifact = {https://anonymous.4open.science/r/AgentLeanDiscprop-1597/},
+  bibtex_show = {true},
+  abstract = {
+    As the cost of code generation becomes cheaper with AI, the new bottleneck in software engineering has shifted to intent specification and validation. Overcoming this durability crisis of AI-driven coding requires more than traditional fuzzing: each candidate property must be <em>proven</em> correct over a model and <em>shown to hold</em> on the real implementation, making formal proof and systematic property-based testing (PBT) complementary. However, validating properties this way at scale requires solving two subproblems: verifying candidate properties and operationalizing PBT without AI hallucination. We hypothesize that recurring property patterns, cast as <em>property templates</em>—abstract, parameterized forms with holes—address both at once.
+
+    This paper investigates recurring property patterns in Apache Spark. In data-intensive scalable computing systems, correctness properties arise from the principles of data partition, computation decomposition, and dataflow computation. For instance, aggregation decomposition relates a global function executed on the entire dataset to a local function followed by a recombiner. We design an agentic, dual-track validation framework that uses property templates to formally verify correctness in the Lean 4 theorem prover and instantiate PBT templates as executable PySpark tests. Our evaluation shows that property templates increase agentic proof engineering success by up to 2.6× (1.6× on average) and reduce proof hallucinations by 59\%. Template-guided PBT synthesis reduces intent misalignments from 22 to 1 and cuts synthesis cost by up to 5.7× (3.8× on average). Template-guided synthesis further exceeds a state-of-the-art Spark fuzzer and approaches unguided LLM-based PBT on code coverage. Finally, comparing the two tracks is informative: when a proof succeeds yet a PBT finds a counterexample, the mismatch identifies a gap between the formal model and implementation.
+  },
+}
+
+
 @inproceedings{leeAccurateLowCostResidual2026,
   title = {Accurate and {{Low-Cost Residual Risk Assessment}} via {{Sampled Profiling}} and {{Structure-Aware Coverage Amplification}}},
   booktitle = {2026 41st {{IEEE}}/{{ACM International Conference}} on {{Automated Software Engineering}} ({{ASE}})},
@@ -7,7 +27,10 @@
   abbr = {ASE},
   selected = {true},
   month = oct,
+  pages = {2831--2842},
+  doi = {10.1145/3832783.3837519},
   pdf = {profrr-paper.pdf},
+  preview = {profrr-image.png},
   artifact = {https://doi.org/10.5281/zenodo.19244795},
   bibtex_show = {true},
   abstract = {
@@ -57,6 +80,7 @@
   pages = {FSE084:1--FSE084:22},
   doi = {10.1145/3797112},
   pdf = {concordance-paper.pdf},
+  preview = {concordance-image.png},
   month = jul,
   bibtex_show = {true},
   abbr = {FSE},
@@ -99,6 +123,7 @@
   author = {Tu, Haoxin and Lee, Seongmin and Li, Yuxian and Chen, Peng and Jiang, Lingxiao and B{\"o}hme, Marcel},
   year = {2026},
   pdf = {cottontail-paper.pdf},
+  preview = {cottontail-image.png},
   month = may,
   publisher = {IEEE},
   bibtex_show = {true},
