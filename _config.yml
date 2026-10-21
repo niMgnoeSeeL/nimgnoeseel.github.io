@@ -7,9 +7,9 @@ first_name: Seongmin
 middle_name:
 last_name: Lee
 contact_note: 
-description: academic blog of Seongmin Lee
-footer_text: 
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+description: Homepage of Seongmin Lee
+footer_text:
+keywords: Seongmin Lee, program analysis, software testing, fuzzing, statistical software testing, software engineering, POSTECH # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🕉 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -177,6 +177,7 @@ exclude:
   - _pages/profiles.md
   - _pages/teaching.md
   - _pages/dropdown.md
+  - _pages/blog.md # blog is private for now; posts live in _post_drafts/
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md

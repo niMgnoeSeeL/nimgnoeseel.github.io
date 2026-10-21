@@ -196,12 +196,12 @@
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
           <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">
-          <img src="{{ '/assets/img/pdf-icon.svg' | relative_url }}" alt="PDF"
+          <img src="{{ '/assets/img/pdf-icon.svg' | relative_url }}" alt=""
           style="height: 1.8em; margin-left: -0.2em; margin-right: 0.0em; vertical-align: -0.3em;">
           PDF</a>
         {% else %}
           <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
-          <img src="{{ '/assets/img/pdf-icon.svg' | relative_url }}" alt="PDF" 
+          <img src="{{ '/assets/img/pdf-icon.svg' | relative_url }}" alt="" 
           style="height: 1.8em; margin-left: -0.2em; margin-right: 0.0em; vertical-align: -0.3em;">
           PDF</a>
         {% endif %}
@@ -211,7 +211,7 @@
       {% endif %}
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">
-        <img src="{{ '/assets/img/bib-icon.png' | relative_url }}" alt="PDF" 
+        <img src="{{ '/assets/img/bib-icon.png' | relative_url }}" alt="" 
           style="height: 2.4em; margin-left: -0.4em; margin-right: -0.2em; margin-top: -0.2em; margin-bottom: -0.4em; vertical-align: -0.3em;">
           Bib</a>
       {% endif %}
@@ -220,7 +220,7 @@
       {% endif %}
       {% if entry.arxiv %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">
-        <img src="{{ '/assets/img/arxiv-icon.svg' | relative_url }}" alt="PDF" 
+        <img src="{{ '/assets/img/arxiv-icon.svg' | relative_url }}" alt="" 
           style="height: 1.8em; margin-right: 0.0em; vertical-align: -0.3em;">
         arXiv</a>
       {% endif %}

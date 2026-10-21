@@ -1673,7 +1673,7 @@ figure.cover {
 
 .talk-context {
   font-style: italic;
-  color: #7c7c7c;
+  color: var(--global-talk-context-color);
   margin-top: -0.5rem;
   margin-bottom: 0.25rem;
   margin-left: 1rem;
