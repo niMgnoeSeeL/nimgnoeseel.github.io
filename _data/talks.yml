@@ -1,0 +1,54 @@
+# Talks shown on /talks/ (grouped by year, in this order).
+#
+# Fields:
+#   year      (required)
+#   title     (required) talk title, rendered in italics
+#   prefix    (optional) text before the title, e.g. "🌟 Invited Tutorial:"
+#   note      (optional) small italic note under the title
+#   location  (required) venue; may contain HTML links
+#   slides    (optional) URL for the "📄 Slides" button
+#   handson   (optional) URL for the "💻 Hands-on" button
+
+- year: 2025
+  prefix: "🌟 Invited Tutorial:"
+  title: "The Magic of Statistics for Software Testing: How to Foresee the Unseen"
+  location: '18th International Workshop on Search-Based and Fuzz Testing (<a href="https://sbft25.github.io/tutorials/">SBFT''25</a>)'
+  slides: https://drive.google.com/file/d/1Dy0ErGVZgJlA6lZy6TYAR_L6ZHnV-pYG/view?usp=sharing
+  handson: https://github.com/niMgnoeSeeL/SBFT25-tutorial
+
+- year: 2025
+  title: "The Magic of Statistics for Software Testing: How to Foresee the Unseen"
+  location: "National University of Singapore & Korea University"
+
+- year: 2025
+  title: "Open Peer Review in ICLR'25"
+  location: '<a href="https://osip.mpdl.mpg.de/2025/03/05/osa-2024-follow-up-materials/">Open Science Ambassador Meeting</a>, Max Planck Society'
+  slides: https://pure.mpg.de/rest/items/item_3639195_1/component/file_3639196/content
+
+- year: 2024
+  title: "On the Surprising Efficiency, Scalability, and Predictability of Greybox Fuzzing"
+  note: "*Responsible for part of Dr. Marcel Böhme's lecture and live coding session on fuzzing predictability."
+  location: "Fuzzing and Software Security Summer School, National University of Singapore"
+  slides: https://www.dropbox.com/scl/fi/yuaymj1hjfbrxfn9ykvox/24.05.30-FuzzngSummerSchool.pdf?rlkey=7beqgi122y9rktgz89yq4pl55&st=nvrfzyls&dl=0
+  handson: /assets/jupyter/fuzzingsummerschool-filled.ipynb
+
+- year: 2024
+  title: "Statistical Program Analysis"
+  location: "KAIST & UNIST"
+  slides: https://www.dropbox.com/scl/fi/iywi9smuzis70cigom8qa/spa.pdf?rlkey=8um29x7e5xgtyk32dq5lw6anp&st=6adwibqv&dl=0
+
+- year: 2023
+  title: "Causal Program Dependence Analysis"
+  location: "Sheffield Causality and Testing Workshop"
+
+- year: 2022
+  title: "Statistical Program Dependence Analysis"
+  location: "Handong Global University"
+
+- year: 2022
+  title: "Observation-based Approximate Dependency Modeling and its Use for Program Slicing"
+  location: "Korea Conference on Software Engineering"
+
+- year: 2018
+  title: "MOBS: Multi-Operator Observation-Based Slicing using Lexical Approximation of Program Dependence"
+  location: "59th CREST Open Workshop - Multi-language Software Analysis"
