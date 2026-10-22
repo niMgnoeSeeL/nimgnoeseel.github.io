@@ -179,6 +179,7 @@ exclude:
   - _pages/dropdown.md
   - _pages/blog.md # blog is private for now; posts live in _post_drafts/
   - bin/
+  - CLAUDE.md
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile
@@ -192,7 +193,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
