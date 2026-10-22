@@ -1,0 +1,349 @@
+/*******************************************************************************
+ * Site-specific styles.
+ *
+ * Everything that differs from the upstream al-folio theme lives here, so
+ * _base.scss and _themes.scss can stay identical to upstream and be updated
+ * without merge conflicts. Imported right after "base" in assets/css/main.scss,
+ * so rules here win over the upstream rules they override.
+ ******************************************************************************/
+
+/* Theme variables ---------------------------------------------------------- */
+
+:root {
+  --global-theme-color: #{$blue-color};
+  --global-hover-color: #{$blue-color};
+  --global-timeline-bg-color: #f8f9fa;
+  --global-timeline-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.06);
+  --global-talk-context-color: #6c6c6c;
+}
+
+html[data-theme="dark"] {
+  --global-timeline-bg-color: #2a2b2e;
+  --global-timeline-shadow: 0 0 0 1px #424246;
+  --global-talk-context-color: #9a9a9a;
+}
+
+/* About page ---------------------------------------------------------------- */
+
+/* Announcement box at the top of the about page */
+blockquote.announcement {
+  display: flow-root; // stay clear of the floated profile picture instead of running under it
+  margin: 0 0 0.5em;
+  padding: 0.6em 1em;
+  font-size: 1rem;
+}
+
+blockquote.announcement + :not(.announcement) {
+  margin-top: 1em;
+}
+
+h2.selected-publications-heading {
+  .equal-contribution-note {
+    margin-left: 0.75rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--global-text-color);
+    vertical-align: baseline;
+  }
+}
+
+.post-description {
+  font-size: 1rem;
+  color: var(--global-text-color-light);
+}
+
+/* Publications -------------------------------------------------------------- */
+
+.publications {
+  h2.bibliography {
+    color: var(--global-text-color-light);
+  }
+
+  &.selected-publications {
+    position: relative;
+  }
+
+  // The year sits in the right margin only when the container leaves room for it;
+  // below 992px it falls back to the regular h2.bibliography divider.
+  @media (min-width: 992px) {
+    &.selected-publications h2.bibliography {
+      border-top: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      right: -3rem;
+      height: 0;
+      overflow: visible;
+      font-size: 2rem;
+      line-height: 1;
+      color: var(--global-text-color-light);
+      z-index: 1;
+      transform: translateY(0.5rem);
+    }
+  }
+
+  ol.bibliography li {
+    .abbr figure {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; // 9/16 — locks figure to 16:9
+      margin: 0;
+      overflow: hidden;
+      border-radius: 4px;
+      box-shadow:
+        0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .abbr picture {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    img.preview {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      box-shadow: none;
+    }
+
+    .abbr .award {
+      color: var(--global-bg-color) !important;
+      background-color: var(--global-highlight-color) !important;
+      border: 1px solid var(--global-highlight-color);
+    }
+
+    .links {
+      a.btn {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      a.award.btn {
+        background-color: var(--global-highlight-color) !important;
+        color: white !important;
+        font-weight: bold;
+        border: 1px solid var(--global-highlight-color) !important;
+      }
+    }
+  }
+}
+
+// Custom click-to-zoom for publication preview thumbnails (assets/js/preview-zoom.js).
+img.preview {
+  cursor: zoom-in;
+}
+
+.preview-zoom-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+  opacity: 0;
+  transition: opacity 0.18s ease;
+  padding: 2rem;
+}
+
+.preview-zoom-overlay.open {
+  opacity: 1;
+}
+
+.preview-zoom-overlay img {
+  max-width: min(720px, 90vw);
+  max-height: 80vh;
+  width: min(720px, 90vw); // fixed so the swap from thumbnail to original does not resize the overlay
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  object-fit: contain;
+  cursor: zoom-out;
+}
+
+/* Publication search and venue filters (assets/js/bibsearch.js) ------------- */
+
+.bib-search-controls {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.bibsearch-form-input {
+  flex: 0 0 240px;
+  width: 240px;
+  max-width: 240px;
+  margin: 0;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border-color: var(--global-divider-color);
+  box-shadow: none;
+}
+
+.venue-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.venue-filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.venue-filter-group-label {
+  flex: 0 0 auto;
+  min-width: 5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--global-text-color-light);
+  margin-right: 0.25rem;
+}
+
+@media (max-width: 576px) {
+  .bib-search-controls {
+    flex-wrap: wrap;
+  }
+
+  .bibsearch-form-input {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.venue-filter-btn {
+  padding: 3px 10px;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  border: 1px solid var(--global-divider-color);
+  background: transparent;
+  color: var(--global-text-color-light);
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+  }
+
+  &.active {
+    background: var(--global-theme-color);
+    color: var(--global-bg-color);
+    border-color: var(--global-theme-color);
+  }
+}
+
+.bibsearch-form-input:focus {
+  border-color: var(--global-theme-color) !important;
+}
+
+/* Talks page (_pages/talks.md, data in _data/talks.yml) ---------------------- */
+
+.pub-year {
+  font-size: 2rem;
+  color: var(--global-text-color-light);
+  text-align: right;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.pub-year::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -10px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--global-divider-color);
+  opacity: 1;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.8rem;
+  padding: 1.2rem 1rem 1rem 1.5rem;
+  border-radius: 0.6rem;
+  background-color: var(--global-timeline-bg-color);
+  box-shadow: var(--global-timeline-shadow);
+}
+
+.timeline-item h5.title {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-item p {
+  margin-bottom: 0.3rem;
+}
+
+.timeline-item .btn {
+  margin-top: 0.2rem;
+  margin-right: 0.4rem;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  min-width: 110px;
+}
+
+.talk-context {
+  font-style: italic;
+  color: var(--global-talk-context-color);
+  margin-top: -0.5rem;
+  margin-bottom: 0.25rem;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.talk-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.talk-left {
+  flex: 1;
+}
+
+.talk-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 100px;
+}
+
+@media (max-width: 576px) {
+  .talk-content {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .talk-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
