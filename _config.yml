@@ -181,6 +181,7 @@ exclude:
   - bin/
   - CLAUDE.md
   - CONTRIBUTING.md
+  - CV # symlink to the local CV source (gitignored)
   - CUSTOMIZE.md
   - Dockerfile
   - docker-compose.yml
